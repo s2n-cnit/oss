@@ -1,0 +1,116 @@
+{
+    "name": "Name",
+    "callbackUrl": "http://192.168.1.1:9090",
+    "applicationGraph":
+    {
+        "applicationComponents":
+        [
+            {
+                "componentNodeInstanceID": "31",
+                "componentNodeInstanceName": "MariaDB"
+            },
+            {
+                "componentNodeInstanceID": "32",
+                "componentNodeInstanceName": "PhpMyAdmin"
+            }
+        ],
+        "applicationComponentEndpoints":
+        [
+            {
+                "applicationComponentEndpointId": "32",
+                "fromApplicationComponentId": "32",
+                "toApplicationComponentId": "31",
+                "type": "CORE"
+            },
+            {
+                "toApplicationComponentId": "32",
+                "type": "ACCESS"
+            }
+        ]
+    },
+    "locationConstraints":
+    [
+        {
+            "applicationComponentId": "31",
+            "geographicalAreaId": "genoa"
+        },
+        {
+            "applicationComponentId": "32",
+            "geographicalAreaId": "genoa"
+        }
+    ],
+    "computingConstraints":
+    [
+        {
+            "applicationComponentId": "31",
+            "ram": "2.0Gi",
+            "cpu": "1",
+            "storage": "20Gi"
+        },
+        {
+            "applicationComponentId": "32",
+            "ram": "2.0Gi",
+            "cpu": "1",
+            "storage": "20Gi"
+        }
+    ],
+    "networkingConstraints":
+    [
+        {
+            "applicationComponentId": "32",
+            "applicationComponentEndpointId": "32",
+            "additionalParams":
+            [
+                {
+                    "pduSessionId": "1",
+                    "flowId": "f1",
+                    "enableInternetAccess": true
+                }
+            ],
+            "sliceId": "118"
+        }
+    ],
+    "sliceProfiles":
+    [
+        {
+            "sliceId": "118",
+            "sliceAmbr": "10000.0Mbps",
+            "minimumGuaranteedBandwidth": "1231231.0Mbps",
+            "enabledUEList":
+            [
+                {
+                    "ICCID": "*"
+                }
+            ],
+            "locationConstraints":
+            [
+                {
+                    "geographicalAreaId": "Athens"
+                }
+            ],
+            "profileParams":
+            {
+                "isolationLevel": "NO_ISOLATION",
+                "pduSessions":
+                [
+                    {
+                        "pduSessionId": "1",
+                        "flows":
+                        [
+                            {
+                                "flowId": "f1",
+                                "gfbr": "20",
+                                "mfbr": "20",
+                                "5qi": "6"
+                            }
+                        ],
+                        "pduSessionAmbr": "10Mbps"
+                    }
+                ],
+                "ueAmbr": "10000.0Mbps",
+                "maximumNumberUE": "0"
+            },
+            "sliceType": "EMBB"
+        }
+    ]
+}
