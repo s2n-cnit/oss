@@ -44,7 +44,7 @@ The MetalCL is the service dedicated to managing and terraforming bare-metal res
 
 To run the OSS follow these steps:
  1. Install VisulStudio
- 2. Use the project files in the "Oss" folder [issues page](https://github.com/s2n-cnit/oss/Oss/)
+ 2. Use the project files in the "Oss" folder [OSS](https://github.com/s2n-cnit/oss/Oss/)
 
 ## Log file
 The file can be found in the logs folder of OSS (/opt/oss/volumes/intents). 
