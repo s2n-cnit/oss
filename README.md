@@ -68,7 +68,3 @@ Contributions, issues, and feature requests are welcome!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-## ⭐️ Show your support
-
-If you like this project hit the star button!
