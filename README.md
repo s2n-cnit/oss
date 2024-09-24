@@ -62,6 +62,9 @@ It is also possible to use the runtime log print by the OSS.
 
 - GitHub: [@Guerino](https://github.com/guerol)
 
+## Fundings
+The OSS development is supported by the [5G-INDUCE](https://www.5g-induce.eu/) project 
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
