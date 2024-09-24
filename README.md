@@ -3,7 +3,7 @@
 
 # 📖 The 5G Operation Support System (OSS)
 
-The <a href="[#readme-top](https://www.5g-induce.eu/)">5G-INDUCE</a> Operations Support System (OSS), depicted in figure below, is in charge of managing all functions and operations required for the nApp placement over edge computing facilities and for its connection to a (properly configured) network slice, as well as maintaining the information on all the data regarding the deployed applications, network services, and available infrastructure resources. 
+The [5G-INDUCE](https://www.5g-induce.eu/) Operations Support System (OSS), depicted in figure below, is in charge of managing all functions and operations required for the nApp placement over edge computing facilities and for its connection to a (properly configured) network slice, as well as maintaining the information on all the data regarding the deployed applications, network services, and available infrastructure resources. 
 
 ![The OSS architecture](docs/images/oss_architecture.png)
 
@@ -68,7 +68,6 @@ Contributions, issues, and feature requests are welcome!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support
 
