@@ -1,31 +1,12 @@
 <a name="readme-top"></a>
-
-<!-- TABLE OF CONTENTS -->
-
-# 📗 Table of Contents
-
-- [📖 About the Project](#-nfvcl)
-  - [Key Features](#key-features)
-- [💻 Getting Started](#-getting-started)
-  - [Setup](#setup)
-  - [Requirements](#requirements)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Configuration](#configuration)
-  - [Running🏃](#running-)
-  - [Deployment🎈 (Docker+Helm)](#deployment)
-  - [Usage📖](#usage-)
-  - [Debug🧪](#debug-)
-- [👥 Authors](#-authors)
-- [🤝 Contributing](#-contributing)
-- [⭐️ Show your support](#-show-your-support)
-- [📝 License](#-license)
-
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 The 5G Operation Support System (OSS)
 
 The <a href="[#readme-top](https://www.5g-induce.eu/)">5G-INDUCE</a> Operations Support System (OSS), depicted in figure below, is in charge of managing all functions and operations required for the nApp placement over edge computing facilities and for its connection to a (properly configured) network slice, as well as maintaining the information on all the data regarding the deployed applications, network services, and available infrastructure resources. 
+
+![The OSS architecture](docs/images/oss_architecture.png)
+
 The OSS is designed according to a highly modular architecture: all the software services are state-of-the-art cloud-native software, i.e., stateless services (or more precisely services with a state maintained in an external database; namely, MongoDB and Prometheus), inherently parallelizable. 
 The 5G-INDUCE OSS architecture is organized in a suite of five main software services, grouped into two main modules: the North-Bound OSS (NB-OSS) and the South-Bound OSS (SB-OSS). 
 The former module is meant to front-facing the NAO by managing slice negotiations for nApps, and to maintain metadata (e.g., coverage area served, operational capabilities, etc.) of one or multiple onboarded SB-OSS modules. 
@@ -42,8 +23,6 @@ In case that bare-metal or virtualization programmability levels in an administr
 The role of the NFVCL within the SB-OSS is to manage the lifecycle of NFV services to provide suitable connectivity to nApp components and UEs in fully automated and zero-touch fashion. 
 If not provided by the bare metal layer, the NFVCL is also in charge of providing and maintaining cloud-native computing frameworks at edge facilities (i.e., realizing Kubernetes clusters as NFV services). 
 The MetalCL is the service dedicated to managing and terraforming bare-metal resources (i.e., physical servers and hardware network equipment) to create IaaS/PaaS environments compliant with the 5G-platform needs. Also in such a case, this service allows the dynamic Day-0 to -N lifecycle management of operating systems in the servers, of configurations in network equipment, an of complex distributed applications like OpenStack and Kubernetes. 
-
-![The OSS architecture](docs/images/oss_architecture.png)
 
 
 
